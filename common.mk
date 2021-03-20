@@ -88,6 +88,16 @@ PRODUCT_COPY_FILES += \
 # Properties
 -include $(LOCAL_PATH)/vendor_props.mk
 
+# RIl
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.4 \
+    android.hardware.radio.config@1.2 \
+    android.hardware.secure_element@1.0
+
+PRODUCT_PACKAGES += \
+    librmnetctl \
+    libxml2
+
 # RCS
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
